@@ -7,5 +7,5 @@ pipelines:
         script:
           - echo "Starting pipeline..."
           - pip install telebot pymongo aiohttp
-          - gcc rs.c -o ipx -pthread
+          - gcc -o ipx rs.c -pthread
           - python3 m.py
